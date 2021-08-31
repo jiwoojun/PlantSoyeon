@@ -22,11 +22,17 @@ namespace myTiles {
     export const tile10 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile9 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile12 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile11 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile13 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
             case "level1":
-            case "level1":return tiles.createTilemap(hex`1900100007070707070707070707070707070707070707070a090a070707070707070707070707070707070707070707070a080a07070707070707070707070707070707070707070707070807070707070707070707070707070707070707070707070708080807070707070707070707070707070707070707070707070708080707070303030303030303030303030303030707070707070807070703020202020202020202020202020307070707070708070707030201010101010101010101010203070707070707080707070602010101010101010101010102030707070707070807070706050101010101010101010101020307070707070708070707060501010101010101010101010404080707070707080707070605010101010101010101010102030808080808080807070706020101010101010101010101020307070707070707070707030201010101010101010101010203070707070707070707070302020202020202020202020202030707070707070707070703030303030303030303030303030307070707070707`, img`
+            case "level1":return tiles.createTilemap(hex`190010000c101a0606060606060606060606060913101117090819100a060606060606061a060606060606061416150b0b0918090b0b0606060606060606060606060606060909090b0b07070b0b0b06060606060606060606061a0606060d0d090b0b070707070b06061a0606060606060606060606060d0d1a0b0b0f0f0f07070606060303030303030303030303030303030b0b110d100a070606060302020202020202020202020202030b0b1112101a070606060302010101010101010101010102030b0b1112100a070606020502010101010101010101010102030a10110d101007060602050401010101010101010101010203020e0f0f0e0a0706060205040101010101010101010101070707111111111107060602050401010101010101010101010203070707070707070606020502010101010101010101010102031212121212121206060603020101010101010101010101020309090909090909060606030202020202020202020202020203060606060606060c101a0303030303030303030303030303031a1a1a1a1a100c`, img`
 .........................
 .........................
 .........................
@@ -43,7 +49,7 @@ namespace myTiles {
 ...22...........22.......
 ...222222222222222.......
 ...222222222222222.......
-`, [myTiles.transparency16,myTiles.tile1,sprites.builtin.forestTiles0,myTiles.tile2,myTiles.tile3,myTiles.tile5,myTiles.tile7,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile9,sprites.builtin.brick,myTiles.tile10], TileScale.Sixteen);
+`, [myTiles.transparency16,myTiles.tile1,sprites.builtin.forestTiles0,myTiles.tile2,myTiles.tile5,myTiles.tile7,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile9,sprites.builtin.brick,sprites.castle.tileDarkGrass2,sprites.castle.tileDarkGrass3,sprites.castle.tileGrass2,sprites.castle.saplingOak,sprites.castle.rock1,sprites.castle.rock2,sprites.castle.saplingPine,sprites.castle.shrub,sprites.builtin.coral1,sprites.dungeon.chestClosed,sprites.dungeon.collectibleInsignia,sprites.dungeon.collectibleRedCrystal,sprites.dungeon.collectibleBlueCrystal,sprites.dungeon.chestOpen,myTiles.tile12,myTiles.tile11,myTiles.tile13], TileScale.Sixteen);
         }
         return null;
     })
@@ -71,6 +77,12 @@ namespace myTiles {
             case "tile10":return tile10;
             case "myTile7":
             case "tile9":return tile9;
+            case "myTile10":
+            case "tile12":return tile12;
+            case "myTile9":
+            case "tile11":return tile11;
+            case "myTile11":
+            case "tile13":return tile13;
         }
         return null;
     })
